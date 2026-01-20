@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: miryamsa-hello-world  # החליפי במשתמש שלך
+  name: miryamsa-hello-world  
 spec:
   replicas: 3
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: 'quay.io/miryamsa/courceimage:v1'  # התמונה שיצרת ב-Part 1
+          image: 'quay.io/miryamsa/courceimage:v1' 
           ports:
             - containerPort: 8080
           imagePullPolicy: IfNotPresent

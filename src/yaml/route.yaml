@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: miryamsa-hello-world
+spec:
+  to:
+    kind: Service
+    name: miryamsa-hello-world
+    weight: 100
+  port:
+    targetPort: 8080
+  wildcardPolicy: None

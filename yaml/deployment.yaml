@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: 'quay.io/miryamsa/courceimage:v1' 
+          image: 'quay.io/miryamsa/courceimage:v2'
           ports:
             - containerPort: 8080
           imagePullPolicy: IfNotPresent
